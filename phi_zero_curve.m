@@ -23,7 +23,7 @@ z = cos(theta);
 
 % Wavenumber related computations
 k = (2 * pi) / lambda;
-FA_arg = k * waviness_amplitude * (1 - cos(theta));
+FA_arg = k * waviness_amplitude * (cos(theta) - 1);
 
 % Computing nu by scaling x
 nu = (waviness_period / lambda) * x;
